@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Refresh Package list
-sudo apt update
-
 # Install DEPENDENCIES
 if ! dpkg -s i3 i3blocks i3lock i3status i3-wm polybar rofi dex xmodmap >/dev/null 2>&1; then
   sudo apt install i3 i3blocks i3lock i3status i3-wm polybar rofi dex xmodmap -y
