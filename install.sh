@@ -51,7 +51,7 @@ fi
 	  echo "Do you want to download the Iosevka font? (y/n)"
 	  read -r response
 	  if [[ $response == "y" ]]; then
-	    wget -O font/. https://github.com/be5invis/Iosevka/releases/download/v27.2.0/super-ttc-iosevka-27.2.0.zip
+	    wget -P font/. https://github.com/be5invis/Iosevka/releases/download/v27.2.0/super-ttc-iosevka-27.2.0.zip
 	    unzip font/super-ttc-iosevka-27.2.0.zip
 	    sudo cp font/iosevka.ttc /usr/share/fonts/.
 	  fi
