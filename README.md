@@ -1,5 +1,8 @@
 # i3 Tokyo Theme
-Original Theme : https://github.com/stronk-dev/Tokyo-Night-Linux
+
+- Original Theme : https://github.com/stronk-dev/Tokyo-Night-Linux
+
+- Automated install : just run `install.sh`
 
 ## i3
 
