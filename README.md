@@ -14,9 +14,7 @@
 
 
 ## font
-Iosevka
-
-https://typeof.net/Iosevka/
+[Iosevka](https://typeof.net/Iosevka/)
 
 [IosevkaTerm](https://github.com/be5invis/Iosevka/releases/download/v27.2.0/super-ttc-iosevka-27.2.0.zip)https://github.com/be5invis/Iosevka/releases/download/v27.2.0/super-ttc-iosevka-27.2.0.zip
 
@@ -29,9 +27,8 @@ mate wallpapers
 run `install.sh`
 
 ## icons
-Tokyo Night-SE
-
-https://github.com/ljmill/tokyo-night-icons
+[Tokyo Night-SE](
+https://github.com/ljmill/tokyo-night-icons)
 
 https://github.com/ljmill/tokyo-night-icons/releases/download/v0.2.0/TokyoNight-SE.tar.bz2
 
