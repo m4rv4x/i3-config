@@ -27,6 +27,8 @@ run `install.sh`
 
 ## icons
 Tokyo Night-SE
+
 https://github.com/ljmill/tokyo-night-icons
+
 https://github.com/ljmill/tokyo-night-icons/releases/download/v0.2.0/TokyoNight-SE.tar.bz2
 
