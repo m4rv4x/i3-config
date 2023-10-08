@@ -50,7 +50,7 @@ fi
 	  if [[ $response == "y" ]]; then
           wget "https://fontesk.com/download/20494/" -O font/iosevka.zip
 	   unzip font/iosevka.zip -d font/iosevka
-          cp -r font/iosevka /usr/share/fonts/.
+          sudo cp -r font/iosevka /usr/share/fonts/.
 	  fi
 	fi
 
