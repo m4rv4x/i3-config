@@ -9,7 +9,7 @@ mkdir "$date"
 mkdir "$date/config"
 mkdir "$date/home"
 
-config_dirs=("i3" "polybar" "rofi" "gtk-2.0" "gtk-3.0" "gtk-4.0")
+config_dirs=("i3" "polybar" "rofi")
 
 for dir in "${config_dirs[@]}"; do
     if [ -d ~/.config/"$dir" ]; then
@@ -19,7 +19,7 @@ for dir in "${config_dirs[@]}"; do
     fi
 done
 
-home_files=(".gtkrc-2.0" ".fehbg" ".xbindkeysrc" ".Xmodmap")
+home_files=(".xbindkeysrc" ".Xmodmap")
 
 for file in "${home_files[@]}"; do
     if [ -f ~/"$file" ]; then
