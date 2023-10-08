@@ -51,9 +51,12 @@ fi
 	  echo "Do you want to download the Iosevka font? (y/n)"
 	  read -r response
 	  if [[ $response == "y" ]]; then
-	    wget -P font/. https://github.com/be5invis/Iosevka/releases/download/v27.2.0/super-ttc-iosevka-27.2.0.zip
-	    unzip -o font/super-ttc-iosevka-27.2.0.zip
-	    sudo cp font/iosevka.ttc /usr/share/fonts/.
+           wget -P font/. "https://objects.githubusercontent.com/github-production-release-asset-2e65be/27574418/b275015e-1259-4c0c-a952-a4d79e06fbf0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230927T140753Z&X-Amz-Expires=300&X-Amz-Signature=71a14df05162b3faaf39d72fdc080ddd7109ab8c538a7bac155963a0371b2697&X-Amz-SignedHeaders=host&actor_id=33978801&key_id=0&repo_id=27574418&response-content-disposition=attachment%3B%20filename%3DIosevka.tar.xz&response-content-type=application%2Foctet-stream"
+           wget -P font/. "https://objects.githubusercontent.com/github-production-release-asset-2e65be/27574418/23675e48-a286-47a6-ac4f-c703988097a2?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230927T140756Z&X-Amz-Expires=300&X-Amz-Signature=6ea93c38f1373db7a93f882e9b2b1279d8b495f6bdfe7f06f29139d28d6960ac&X-Amz-SignedHeaders=host&actor_id=33978801&key_id=0&repo_id=27574418&response-content-disposition=attachment%3B%20filename%3DIosevkaTerm.tar.xz&response-content-type=application%2Foctet-stream
+	    tar -xf font/Iosevka.tar.xz -C Iosevka
+           tar -xf font/IosevkaTerm.tar.xz -C IosevkaTerm
+	    cp -r font/Iosevka /usr/share/fonts/.
+           cp -r font/IosevkaTerm /usr/share/fonts/.
 	  fi
 	fi
 
