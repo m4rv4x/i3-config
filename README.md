@@ -4,8 +4,26 @@
 
 - Automated install : just run `install.sh`
 
-## i3
+## i3 Shortcuts
 
+- ⌘ + Enter = New Terminal
+- ⌘ + BackSpace = Firefox
+
+- ⌘ + D = Rofi Launcher
+- ⌘ + P = Rofi SSH Launcher
+- ⌘ + O = Rofi File Search
+
+- ⌘ + A = Select Multiple Window
+- ⌘ + Q = Kill Active Window
+- ⌘ + Z = Focus w/ Horizontal tabs
+- ⌘ + S = Focus w/ Horizontal tabs
+- ⌘ + E = Unfocus
+- ⌘ + F = Fullscreen
+
+- ⌘ + [0-10] = Change to desktop
+- ⌘ + Shift + [0-10] = Move active window to desktop
+- ⌘ + Shift + R = Restart i3
+- ⌘ + Shift + C = Reload i3
 
 ## polybar
 
@@ -31,11 +49,6 @@ run `install.sh`
 https://github.com/ljmill/tokyo-night-icons)
 
 Download : https://github.com/ljmill/tokyo-night-icons/releases/download/v0.2.0/TokyoNight-SE.tar.bz2
-
-
-
-
-
 
 
 ## Help
