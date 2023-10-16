@@ -17,7 +17,7 @@
 - ⌘ + Q = Kill Active Window
 - ⌘ + Z = Focus w/ Horizontal tabs
 - ⌘ + S = Focus w/ Horizontal tabs
-- ⌘ + E = Unfocus
+- ⌘ + E = Unfocus w/ Vert-Horiz Switch
 - ⌘ + F = Fullscreen
 
 - ⌘ + [0-10] = Change to desktop
