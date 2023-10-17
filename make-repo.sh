@@ -19,12 +19,5 @@ for dir in "${config_dirs[@]}"; do
     fi
 done
 
-home_files=(".xbindkeysrc" ".Xmodmap")
+cp ~/.Xmodmap "$date/home/."
 
-for file in "${home_files[@]}"; do
-    if [ -f ~/"$file" ]; then
-        cp ~/"$file" "$date/home/."
-    else
-        echo "Config file $file does not exist. Skipping..."
-    fi
-done

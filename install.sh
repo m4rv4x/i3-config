@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install DEPENDENCIES
-if ! dpkg -s wget dialog >/dev/null 2>&1; then
-  sudo apt install wget dialog -y
+if ! dpkg -s wget dialog lxappearance >/dev/null 2>&1; then
+  sudo apt install wget dialog lxappearance -y
 fi
 
 # Install DEPENDENCIES
@@ -70,7 +70,7 @@ fi
 echo "Do you want to copy the .fehbg, xbindkeysrc, and Xmodmap files? (y/N)"
 read -r response
 if [[ $response == "y" ]]; then
-  cp -f -i -r $selected_folder/home/* ~/.
+  cp -f -i -r $selected_folder/home/.Xmodmap ~/.
 fi
 
-echo "[!] i3 theme install done"
+echo "[!] i3 theme install done, restart window manager and run lxappearance to finalize"
