@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install DEPENDENCIES
-if ! dpkg -s wget >/dev/null 2>&1; then
-  sudo apt install wget -y
+if ! dpkg -s wget dialog >/dev/null 2>&1; then
+  sudo apt install wget dialog -y
 fi
 
 # Install DEPENDENCIES
