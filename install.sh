@@ -1,8 +1,13 @@
 #!/bin/bash
 
 # Install DEPENDENCIES
-if ! dpkg -s i3 i3blocks i3lock i3status i3-wm polybar rofi dex xmodmap >/dev/null 2>&1; then
-  sudo apt install i3 i3blocks i3lock i3status i3-wm polybar rofi dex xmodmap -y
+if ! dpkg -s wget >/dev/null 2>&1; then
+  sudo apt install wget -y
+fi
+
+# Install DEPENDENCIES
+if ! dpkg -s i3 i3blocks i3lock i3status i3-wm polybar rofi dex >/dev/null 2>&1; then
+  sudo apt install i3 i3blocks i3lock i3status i3-wm polybar rofi dex -y
 fi
 
 # Install BACKGROUND AND COMPOSITE
@@ -11,8 +16,8 @@ if ! dpkg -s feh compton mate-background >/dev/null 2>&1; then
 fi
 
 # Install Tray Apps
-if ! dpkg -s pasystray nm-applet diodon >/dev/null 2>&1; then
-  sudo apt install pasystray nm-applet diodon -y
+if ! dpkg -s pasystray nm-tray diodon >/dev/null 2>&1; then
+  sudo apt install pasystray nm-tray diodon -y
 fi
 
 # Select Config with DIALOG
@@ -43,29 +48,29 @@ fi
 
 # Download COPY FONT AWESOME IOSEVKA 
 	# Verify if Iosevka font exists
-	if [[ ! -f /usr/share/fonts/iosevka.ttc ]]; then
+	if [[ ! -f /usr/share/fonts/iosevka ]]; then
 	  mkdir font
-	  echo "Do you want to download the Iosevka font? (y/n)"
+	  echo "Do you want to download the Iosevka font? (y/N)"
 	  read -r response
 	  if [[ $response == "y" ]]; then
           wget "https://fontesk.com/download/20494/" -O font/iosevka.zip
-	   unzip font/iosevka.zip -d font/iosevka
+          unzip font/iosevka.zip -d font/iosevka
           sudo cp -r font/iosevka /usr/share/fonts/.
 	  fi
 	fi
 
 # Copy CONFIG (gtk + i3 + polybar + rofi)
-echo "Do you want to copy the gtk, i3, polybar, and rofi config files? (y/n)"
+echo "Do you want to copy the gtk, i3, polybar, and rofi config files? (y/N)"
 read -r response
 if [[ $response == "y" ]]; then
-  cp -i -r $selected_folder/config/* ~/.config
+  cp -f -i -r $selected_folder/config/* ~/.config
 fi
 
 # Copy CONFIG (.fehbg + xbindkeysrc + Xmodmap)
-echo "Do you want to copy the .fehbg, xbindkeysrc, and Xmodmap files? (y/n)"
+echo "Do you want to copy the .fehbg, xbindkeysrc, and Xmodmap files? (y/N)"
 read -r response
 if [[ $response == "y" ]]; then
-  cp -i -r $selected_folder/home/* ~/.
+  cp -f -i -r $selected_folder/home/* ~/.
 fi
 
 echo "[!] i3 theme install done"
